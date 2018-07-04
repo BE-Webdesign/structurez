@@ -6,9 +6,6 @@
   "directories": {
     "test": "tests"
   },
-  "scripts": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BE-Webdesign/structurez.git"
@@ -22,5 +19,21 @@
   "bugs": {
     "url": "https://github.com/BE-Webdesign/structurez/issues"
   },
-  "homepage": "https://github.com/BE-Webdesign/structurez#readme"
+  "homepage": "https://github.com/BE-Webdesign/structurez#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.2.0",
+    "jest": "^23.2.0"
+  },
+  "bin": {
+    "jest": "./node_modules/.bin/jest"
+  },
+  "babel": {
+    "presets": [ "@babel/env" ]
+  },
+  "scripts": {
+    "test": "jest"
+  }
 }

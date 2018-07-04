@@ -1,0 +1,25 @@
+{
+  "name": "structurez",
+  "version": "0.0.0",
+  "description": "A set of data structures.",
+  "main": "index.js",
+  "scripts": {
+    "test": "bash ./.scripts/test-all.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BE-Webdesign/structurez.git"
+  },
+  "keywords": [
+    "Structures"
+  ],
+  "bin": {
+    "test-all": "./scripts/test-all.sh"
+  },
+  "author": "Edwin Cromley",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/BE-Webdesign/structurez/issues"
+  },
+  "homepage": "https://github.com/BE-Webdesign/structurez#readme"
+}

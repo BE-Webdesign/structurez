@@ -5,8 +5,8 @@
 exitcode=0
 
 for PACKAGE in $(cat .scripts/RELEASABLE_PACKAGES) ; do
-	cd $(ARG) && npm run test && cd .. &&\
-	echo "✓ Tested $(ARG)" ;\ || exitcode=$?
+	cd $PACKAGE && npm run test || exitcode=$? && cd .. &&\
+	echo "✓ Tested $PACKAGE" ;\
 done
 
 exit $exitcode
