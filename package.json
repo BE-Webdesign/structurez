@@ -4,7 +4,9 @@
   "description": "A set of data structures.",
   "main": "index.js",
   "scripts": {
-    "test": "bash ./.scripts/test-all.sh"
+    "test": "bash ./.scripts/test-all.sh",
+    "install-all": "bash ./.scripts/install-all.sh",
+    "test:coverage": "bash ./.scripts/test-all-coverage.sh"
   },
   "repository": {
     "type": "git",
