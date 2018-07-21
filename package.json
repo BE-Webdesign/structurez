@@ -7,7 +7,7 @@
     "test": "bash ./.scripts/test-all.sh",
     "install-all": "bash ./.scripts/install-all.sh",
     "test:coverage": "bash ./.scripts/test-all-coverage.sh",
-    "publish-all": "bash ./.scritps/publish-all.sh"
+    "publish-all": "bash ./.scripts/publish-all.sh"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/BE-Webdesign/structurez/issues"
   },
-  "homepage": "https://github.com/BE-Webdesign/structurez#readme"
+  "homepage": "https://github.com/BE-Webdesign/structurez#readme",
+  "dependencies": {
+    "npm": "^6.2.0"
+  }
 }
