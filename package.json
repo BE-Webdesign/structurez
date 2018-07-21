@@ -6,7 +6,8 @@
   "scripts": {
     "test": "bash ./.scripts/test-all.sh",
     "install-all": "bash ./.scripts/install-all.sh",
-    "test:coverage": "bash ./.scripts/test-all-coverage.sh"
+    "test:coverage": "bash ./.scripts/test-all-coverage.sh",
+    "publish-all": "bash ./.scritps/publish-all.sh"
   },
   "repository": {
     "type": "git",
