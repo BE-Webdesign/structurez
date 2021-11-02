@@ -1,0 +1,41 @@
+{
+  "name": "@structurez/stack",
+  "version": "1.0.0",
+  "description": "A stack data structure.",
+  "main": "stack.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BE-Webdesign/structurez.git"
+  },
+  "keywords": [
+    "data structures",
+    "stack"
+  ],
+  "author": "Edwin Cromley",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/BE-Webdesign/structurez/issues"
+  },
+  "homepage": "https://github.com/BE-Webdesign/structurez#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-jest": "^27.3.1",
+    "jest": "^27.3.1"
+  },
+  "bin": {
+    "jest": "./node_modules/.bin/jest"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  }
+}
