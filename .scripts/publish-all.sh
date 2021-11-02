@@ -5,7 +5,7 @@
 exitcode=0
 
 for PACKAGE in $(cat .scripts/RELEASABLE_PACKAGES) ; do
-	cd $PACKAGE && npm publish --access public || exitcode=$? && cd .. &&\
+	cd $PACKAGE && rm -rf coverage && npm publish --access public || exitcode=$? && cd .. &&\
 	echo "✓ Published Node Modules for $PACKAGE to npm" ;\
 done
 
