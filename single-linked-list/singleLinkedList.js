@@ -87,6 +87,36 @@ function SingleLinkedList() {
 		},
 
 		/**
+		 * Removes first node of the list and returns it.
+		 *
+		 * @return {Object|null} returns the removed node or null if no node.
+		 */
+		removeFirst: function() {
+			if ( ! head ) {
+				// If empty return null.
+				return null;
+			}
+
+			let node = null;
+
+			if ( head === tail ) {
+				node = head;
+
+				// If head is the only node.
+				head = null;
+				tail = null;
+			} else {
+				node = head;
+
+				head = head.next;
+			}
+
+			length--;
+
+			return node;
+		},
+
+		/**
 		 * Function for traversing the nodes in the list.
 		 *
 		 * @see traverseList above for more documentation.

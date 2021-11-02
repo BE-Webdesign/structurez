@@ -37,6 +37,37 @@ describe( 'SingleLinkedList', () => {
 		} );
 	} );
 
+	describe( 'removeFirst', () => {
+		test( 'removing an empty node', () => {
+			const list = SingleLinkedList();
+
+			expect( list.removeFirst() ).toEqual( null );
+		} );
+
+		test( 'adding a node and removing the first', () => {
+			const list = SingleLinkedList();
+
+			const node1 = list.prepend( 1 );
+
+			const removedNode = list.removeFirst();
+
+			expect( removedNode ).toEqual( node1 );
+			expect( list.length() ).toEqual( 0 );
+		} );
+
+		test( 'adding two nodes and removing the first', () => {
+			const list = SingleLinkedList();
+
+			const node1 = list.prepend( 1 );
+			const node2 = list.prepend( 2 );
+
+			const removedNode = list.removeFirst()
+
+			expect( removedNode ).toEqual( node2 );
+			expect( list.length() ).toEqual( 1 );
+		} );
+	} );
+
 	describe( 'length', () => {
 		test( 'empty list', () => {
 			const list = SingleLinkedList();
